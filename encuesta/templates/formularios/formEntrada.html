@@ -1,0 +1,14 @@
+
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Formulario</h1>
+<form action="{%url 'encuesta:entrada' %}" method="post">
+    {% csrf_token %}
+    <label for="">Ingrese su edad:</label>
+    <input type="number" name="edad"><br>
+
+    <input type="submit" name="enviar" value="Calcular precio">
+</form>
+
+{% endblock %}

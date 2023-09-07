@@ -1,0 +1,90 @@
+body {
+    background: #202020;
+    color: whitesmoke;
+}
+
+.navbar{
+    background: #404040;
+    padding:5px;
+}
+.navbar ul{
+    display: flex;
+    justify-content:space-around;
+}
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color:aquamarine;
+}
+
+.container{
+    padding:10px 0px;
+    margin:auto;
+}
+
+.card{
+    background:whitesmoke;
+    padding:10px;
+    margin-bottom: 2px;
+    color:black;
+}
+
+.input{
+    background:wheat;
+    padding:10px;
+    text-align:center;
+    display:block
+}
+
+.mainBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-white{
+    color: white;
+}
+
+.box{
+    
+    width: 15%;
+    background-color: #404040;
+    text-align: center;
+}
+
+.box-titulo{
+    font-size: 30px;
+}
+
+.box-text{
+    font-size: 16px;
+}
+
+.box-btn {
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .box-btn:hover {
+    background: #318aac;
+    color: #fff !important;
+  }

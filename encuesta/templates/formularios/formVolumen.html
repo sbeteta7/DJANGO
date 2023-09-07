@@ -1,0 +1,16 @@
+
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>CÁLCULO DE VOLUMEN DE UN CILINDRO</h1>
+<form action="{%url 'encuesta:volumen' %}" method="post">
+    {% csrf_token %}
+    <label for="">Introduzca el diámetro en metros:</label>
+    <input type="number" name="diametro"><br>
+    <label for="">Introduzca la altura en metros:</label>
+    <input type="number" name="altura"><br>
+
+    <input type="submit" name="submit" value="Calcular volumen">
+</form>
+{% endblock %}

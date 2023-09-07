@@ -1,0 +1,28 @@
+
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Ingrese a su formulario</h1>
+<div class="mainBox">
+    <div class="box card">
+        <p class="box-titulo text-white" >Formulario 1</p>
+        <button class="box-btn"><a class="link" href="{% url 'encuesta:formCalculadora' %}">Calculadora</a></button>
+        <p class="text-white box-text"><b>Descripción: </b> Calcule la suma, resta y el producto de dos números!!</p>
+    </div>
+
+    <div class="box card">
+        <p class="box-titulo text-white" >Formulario 2</p>
+        <button class="box-btn"><a class="link" href="{% url 'encuesta:formEntrada' %}">Precio Entrada</a></button>
+        <p class="text-white box-text"><b>Descripción: </b> Averigue el costo de entrada a una sala de juegos según su edad. Menores de 4 años entran gratis!!</p>
+    </div>
+
+    <div class="box card">
+        <p class="box-titulo text-white" > Formulario 3</p>
+        <button class="box-btn"><a class="link" href="{% url 'encuesta:formVolumen' %}">Volumen de cilindro</a></button>
+        <p class="text-white box-text"><b>Descripción: </b> Ingrese la altura y el diámetro de un cilindro y descubra su volumen en metros cúbicos. Genial!!</p>
+    </div>
+
+
+</div>
+
+{% endblock %}
